@@ -8,7 +8,6 @@ return {
 			update_in_insert = false,
 			severity_sort = true,
 		})
-
 		vim.lsp.config.clangd = {
 			cmd = {
 				"clangd",
@@ -31,7 +30,7 @@ return {
 		vim.api.nvim_create_autocmd({ "TextChanged", "TextChangedI" }, {
 			pattern = "*.*",
 			callback = function()
-					vim.diagnostic.show()
+				vim.diagnostic.show()
 			end,
 		})
 	end
