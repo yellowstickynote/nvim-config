@@ -3,7 +3,7 @@
 -- Add any additional keymaps here
 local map = LazyVim.safe_keymap_set
 map({ "n" }, "<Tab>", ":w<bar>bn<CR>", { desc = "switch tab", silent = true })
-map({ "n" }, "<leader>a", ":%y<CR>", { desc = "yank buffer", silent = true })
+map({ "n" }, "<leader>a", ":%y+<CR>", { desc = "yank buffer", silent = true })
 
 --running c++ files
 local run = require("scripts/run").run

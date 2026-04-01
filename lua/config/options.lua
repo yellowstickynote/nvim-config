@@ -3,3 +3,4 @@
 -- Add any additional options here
 vim.opt.shiftwidth = 4
 vim.g.autoformat = false
+vim.opt.clipboard=""
