@@ -1,9 +1,11 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
-local map = LazyVim.safe_keymap_set
+local map = vim.keymap.set
 map({ "n" }, "<Tab>", ":w<bar>bn<CR>", { desc = "switch tab", silent = true })
 map({ "n" }, "<leader>a", ":%y+<CR>", { desc = "yank buffer", silent = true })
+vim.keymap.del({"n"},"H")
+vim.keymap.del({"n"},"L")
 
 --running c++ files
 local run = require("scripts/run").run
