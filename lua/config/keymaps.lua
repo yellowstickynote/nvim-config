@@ -1,0 +1,26 @@
+vim.g.mapleader = " "
+local map = vim.keymap.set
+map({ "n" }, "<Tab>", ":w<bar>bn<CR>", { desc = "switch tab", silent = true })
+map({ "n" }, "<leader>a", ":%y+<CR>", { desc = "yank buffer", silent = true })
+
+--running c++ files
+local run = require("scripts/run").run
+vim.keymap.set('n', '<leader>r',
+    function()
+        local successful = run()
+		if successful then
+			vim.api.nvim_feedkeys('A','n',false)
+		end
+    end, { desc = 'Save and run file' })
+vim.keymap.set('n', '<leader>pr',
+    function()
+        run()
+    end, { desc = 'Save and run file in persistent terminal' })
+
+local notests = require("scripts/testcases").notests
+vim.keymap.set('n','<leader>t',
+    function ()
+        notests()
+    end
+    ,{silent = true, desc = "delete \"cin>>t\""}
+)

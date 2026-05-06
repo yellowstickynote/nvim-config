@@ -1,0 +1,13 @@
+{
+	"name": "cpp-snippets",
+	"contributes": {
+		"snippets": [
+			{
+				"language": [
+					"cpp"
+				],
+				"path": "./cpp.jsonc"
+			}
+		]
+	}
+}
