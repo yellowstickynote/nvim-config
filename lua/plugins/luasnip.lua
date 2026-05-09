@@ -1,9 +1,13 @@
-return{
-	{
-		"https://github.com/L3MON4D3/LuaSnip",
-		setup = function()
-			require("luasnip.loaders.from_vscode").load({ paths = "~/.config/nvim/lua/snippets" })
-		end,
-	},
-}
-
+return
+    {
+        "L3MON4D3/LuaSnip",
+        lazy = true,
+        dependencies = {
+            {
+                "rafamadriz/friendly-snippets",
+                config = function()
+                    require("luasnip.loaders.from_vscode").lazy_load({ paths = {"~/.config/nvim/lua/snippets/"} })
+                end,
+            },
+        },
+    }

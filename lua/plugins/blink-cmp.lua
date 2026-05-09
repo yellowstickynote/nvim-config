@@ -33,10 +33,6 @@ return
     -- See the fuzzy documentation for more information
     fuzzy = { implementation = "prefer_rust_with_warning" },
 	snippets = { preset = 'luasnip' },
-    -- ensure you have the `snippets` source (enabled by default)
-    sources = {
-      default = { 'lsp', 'path', 'snippets', 'buffer' },
-    },
   },
   opts_extend = { "sources.default" }
 }

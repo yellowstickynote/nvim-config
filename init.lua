@@ -13,3 +13,4 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 })
 require("scripts.run")
 require("config.keymaps")
+

@@ -1,4 +1,4 @@
 return{
-	'https://github.com/mason-org/mason.nvim',
-	opts={}
+    'https://github.com/mason-org/mason.nvim',
+    opts={}
 }
