@@ -27,7 +27,7 @@
 			"\tcin.tie(NULL);\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \\",
 			"\tcout.tie(NULL)",
 			"constexpr int mod = 1e9+7;",
-			"#define endl \"\n\","
+			"#define endl \"\\n\"",
 			"",
 			"void solve() {",
 				"\t$0",
