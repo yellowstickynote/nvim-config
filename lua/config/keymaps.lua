@@ -24,3 +24,4 @@ vim.keymap.set('n','<leader>t',
     end
     ,{silent = true, desc = "delete \"cin>>t\""}
 )
+vim.keymap.set("n", "<leader>vr", ":IncRename ", {desc = "rename variable"})
