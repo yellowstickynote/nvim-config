@@ -22,6 +22,7 @@
 			"#define fi first",
 			"#define se second",
 			"#define int long long",
+			"#define all(x) x.begin(),x.end()",
 			"typedef pair<int, int> pint;",
 			"#define vint vector<int>",
 			"#define fast_cin()\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \\",
