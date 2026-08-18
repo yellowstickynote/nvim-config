@@ -22,6 +22,7 @@
 			"#define int long long",
 			"typedef pair<int, int> pint;",
 			"#define vint vector<int>",
+			"#define all(x) x.begin(),x.end()",
 			"#define fast_cin()\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \\",
 			"\tios_base::sync_with_stdio(false);\t\t\t\t\t\t\t\t\t\t  \\",
 			"\tcin.tie(NULL);\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \\",
