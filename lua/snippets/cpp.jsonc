@@ -131,6 +131,7 @@
 	"multidimensional vectors": {
 		"prefix": "dp",
 		"body": [
+			"template<typename T>",
 			"auto make_vector(int n, T val) {",
 				"    return std::vector<T>(n, val);",
 				"}",
@@ -140,6 +141,7 @@
 					"    auto inner = make_vector(args...);",
 					"    return std::vector<decltype(inner)>(n, inner);",
 					"}",
+					"template<typename T>",
 					"auto make_vll(int n, T val) {",
 						"    return std::vector<int>(n, static_cast<int>(val));",
 						"}",
@@ -157,10 +159,10 @@
 		"prefix": "pbds",
 		"body":[
 
-			"//#include <ext/pb_ds/assoc_container.hpp>",
-			"//using namespace __gnu_pbds;",
-			"//template <class T>",
-			"//using Tree =tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;"
+			"#include <ext/pb_ds/assoc_container.hpp>",
+			"using namespace __gnu_pbds;",
+			"template <class T>",
+			"using Tree =tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;"
 		],
 		"description" : "policly based indexed set"
 	}
