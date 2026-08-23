@@ -23,7 +23,6 @@
 			"\tios_base::sync_with_stdio(false);\t\t\t\t\t\t\t\t\t\t  \\",
 			"\tcin.tie(NULL);\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \\",
 			"\tcout.tie(NULL)",
-			"template<typename T>",
 			"",
 			"void solve() {",
 				"\t$0",
@@ -127,7 +126,7 @@
 											"using mint = ModInt<1000000007>;"
 		],
 		"description": "Modular int data type"
-	}
+	},
 
 	"multidimensional vectors": {
 		"prefix": "dp",
